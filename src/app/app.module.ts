@@ -10,6 +10,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { SearchComponent } from './search/search.component';
 import {ProductService} from './shared/product.service';
 
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,11 @@ import {ProductService} from './shared/product.service';
     SearchComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      { path: 'products/:productId', component: ProductDetailComponent}
+    ])
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

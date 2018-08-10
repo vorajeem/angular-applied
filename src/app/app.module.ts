@@ -8,7 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { SearchComponent } from './search/search.component';
-import {ProductService} from './shared/product.service';
+import { ProductService } from './shared/product.service';
 
 import { RouterModule } from '@angular/router';
 

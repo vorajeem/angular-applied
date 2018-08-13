@@ -12,6 +12,8 @@ import { ProductService } from './shared/product.service';
 
 import { RouterModule } from '@angular/router';
 
+import {FormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
       { path: 'products/:productId', component: ProductDetailComponent}
-    ])
+    ]),
+    FormsModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

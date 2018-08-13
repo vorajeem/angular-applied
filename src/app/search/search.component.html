@@ -1,3 +1,25 @@
-<p>
-  search works!
-</p>
+<h4>Advanced Search</h4>
+<form #f="ngForm">
+  <div class="form-group">
+    <label for="title">Product title:</label>
+    <input id="title" placeholder="Enter title" type="text"
+    name="title" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="price">Product price:</label>
+    <input id="price" 
+    placeholder="Enter price" type="number" 
+    name="price" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="category">Category:</label>
+    <select name="category" id="category" placeholder="Category goes here">
+      <option>books</option>
+      <option>electronics</option>
+      <option>hardware</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary btn-block">Search</button>
+  </div>
+</form>

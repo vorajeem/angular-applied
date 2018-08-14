@@ -1,3 +1,13 @@
-<p>
-  product-item works!
-</p>
+<figure class="figure">
+  <img src="http://placehold.it/320x150" alt="" class="figure-img img-fluid round">
+  <figcaption class="figure-caption">
+    <h5>
+      <a routerLink="['/products',product.id">
+        {{product.title}}</a>
+    </h5>
+    <span>{{product.price | currency}}</span>
+    <p>
+      {{product.shortDescription}}
+    </p>
+  </figcaption>
+</figure>
